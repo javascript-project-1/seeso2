@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+ 
+  
+  <title>SeeSo Web Sample</title>
+  <style>body{
+      overflow: hidden;
+    }
+
+    #container{
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: url("/bg.8df4dfd0.jpg");
+      background-size: cover;
+    }
+    #output{
+      z-index: 1000;
+      left:0;
+      top:0;
+    }
+    
+    canvas{
+      background: transparent
+    }
+    h2{
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 1000;
+      opacity: 0;
+    }
+
+    button{
+      position: fixed;
+      right: 2rem;
+      top: 2rem;
+      z-index: 9090;
+    }</style>
+</head>
+
+<body>
+
+  <button>reset</button>
+
+  <canvas id="output" style="position: fixed;"></canvas>
+  <h2 id="gazeInfo"></h2>
+
+  <div id="container"></div>
+
+  <script src="/gaze.e31bb0bc.js"></script>
+</body>
+
+
+
+</html>
