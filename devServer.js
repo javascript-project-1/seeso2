@@ -8,8 +8,8 @@ const bundlePath = process.argv[2];
 const port = process.argv[3];
 
 app.use((req, res, next) => {
-    res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
-    res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
+    // res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
+    // res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
     next()
 })
 
